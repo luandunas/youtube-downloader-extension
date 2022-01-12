@@ -6,7 +6,7 @@
         <p>A extensão faz apenas um intermédio de pacotes que o youtube executa na página, então gera um <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Blob">blob</a> e faz o download.</p>
     <div>
     <div>
-        <h2><a href="https://github.com/luandunas/youtube-downloader-extension/raw/main/build/Youtube-MP3-Downloader.crx" download>Download</a></h2>
+        <h2><a href="https://github.com/luandunas/youtube-downloader-extension/raw/main/build/Youtube-MP3-Downloader.crx" download>Download da extensão</a></h2>
     </div>
     <div>
         <h2>Perguntas Frequentes (FAQ)</h2>
@@ -25,6 +25,10 @@
         <details>
             <summary>O <strong>Youtube Downloader Extension</strong> é confiável?</summary>
             <p>Sim! O código da extensão é open source, e você mesmo pode conferir como é feita.</p>
+        </details>
+        <details>
+            <summary>O <strong>Youtube Downloader Extension</strong> funciona no Firefox?</summary>
+            <p>Não testei! A extensão foi feita e testada no Google Chrome. Navegadores com base no Chromium como Brave, Microsoft Edge, Opera, Vivaldi, Yandex Browser, ungoogled-chromium e outros devem funcionar normalmente.</p>
         </details>
     </div>
 </main>
