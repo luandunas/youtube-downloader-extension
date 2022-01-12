@@ -35,6 +35,10 @@
             <summary>O <strong>Youtube Downloader Extension</strong> é um site de conversor/download para o youtube?</summary>
             <p>Não, é uma extensão que trabalha nos request feito na página do youtube. O que isso quer dizer? Quer dizer que não existe nenhum servidor ou backend por trás da aplicação.</p>
         </details>
+        <details>
+            <summary>O botão de <strong>Download</strong> da extensão não apareceu, o que eu faço?</summary>
+            <p>Aguarde alguns segundos, se o botão não aparecer atualize a página. O botão pode não aparecer em videos super pequenos (Já estou providenciando uma atualizações para este problema).</p>
+        </details>
     </div>
 </main>
 
