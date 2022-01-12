@@ -1,0 +1,20 @@
+{
+    "name": "Youtube MP3 Downloader",
+    "description": "Easy way to download youtube videos/musics as MP3!",
+    "version": "0.1",
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "run_at": "document_end",
+            "js": [
+                "index.js"
+            ]
+        }
+    ],
+    "manifest_version": 3
+}
