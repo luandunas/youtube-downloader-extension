@@ -2,6 +2,7 @@
     "name": "Youtube MP3 Downloader",
     "description": "Easy way to download youtube videos/musics as MP3!",
     "version": "0.1",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArBhQCw+bmV7YyhwbPZGHBswJCAdikewWEkMSgbeEVgvc/WKGB3cQzeNxd4yoYemfB14rhm4g7VIJJxA/5Hfn367s8lSF6rV+pVpWy6cv9g/LYiG3Qlc+RQUDMPnpwS7iet86HOkgDTOOhiQxOvlHFRs6JMoDrl7u6pvJI/0vNPskbFc7KQbxvxcZY516vhYoWZinxEvlq8MwIQf2Flsq1JcyFsNnlfnuIpQ4RiLqCxU3gH7x/yMf/MaWoB00ztAS9zLu99xtKjOYMwDL3knivO36azCQC6To9413QfuLk9l4GvTWs4G9sZmlHmgqEocVF0VVgYzSJbbP4IyxnxzCiQIDAQAB",
     "permissions": [
         "tabs"
     ],
