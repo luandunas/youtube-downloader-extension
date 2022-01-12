@@ -39,5 +39,5 @@
 </main>
 
 <footer>
-    <p><i>Essa é uma das primeiras versões da extensão, está sujeito à bugs. Qualquer problema relacionado a comportamentos típicos de bug, atualize a página e aguarde, o botão pode demorar alguns segundos para aparecer. Você pode ter problemas ao tentar baixar áudios super pequenos.</i></p>
+    <p><i>Essa é uma das primeiras versões da extensão, está sujeito a bugs. Qualquer problema relacionado a comportamentos típicos de bug, atualize a página e aguarde, o botão pode demorar alguns segundos para aparecer. Você pode ter problemas ao tentar baixar áudios super pequenos.</i></p>
 </footer>
