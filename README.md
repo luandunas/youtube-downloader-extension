@@ -8,13 +8,16 @@
     <div>
         <h2>Perguntas Frequentes (FAQ)</h2>
         <details>
-        <summary>O <strong>Youtube Downloader Extension</strong> faz download de vídeos?</summary>
-        <p>No momento não. Estou trabalhando para disponibilizar o maior número de opções de download possíveis.</p>
-        <summary>O <strong>Youtube Downloader Extension</strong> é confiável?</summary>
-        <p>Sim! O código da extensão é open source, e você mesmo pode conferir como é feita.</p>
+            <summary>O <strong>Youtube Downloader Extension</strong> faz download de vídeos?</summary>
+            <p>No momento não. Estou trabalhando para disponibilizar o maior número de opções de download possíveis.</p>
+        </details>
+        <details>
+            <summary>O <strong>Youtube Downloader Extension</strong> é confiável?</summary>
+            <p>Sim! O código da extensão é open source, e você mesmo pode conferir como é feita.</p>
         </details>
     </div>
 </main>
+
 <footer>
-<p><i>Essa é uma das primeiras versões da extensão, está sujeito à bugs. Qualquer problema relacionado a comportamentos típicos de bug, atualize a página e aguarde, o botão pode demorar alguns segundos para aparecer. Você pode ter problemas ao tentar baixar áudios super pequenos.</i></p>
+    <p><i>Essa é uma das primeiras versões da extensão, está sujeito à bugs. Qualquer problema relacionado a comportamentos típicos de bug, atualize a página e aguarde, o botão pode demorar alguns segundos para aparecer. Você pode ter problemas ao tentar baixar áudios super pequenos.</i></p>
 </footer>
