@@ -16,6 +16,9 @@
             <p>Sim! O código da extensão é open source, e você mesmo pode conferir como é feita.</p>
         </details>
     </div>
+    <div>
+    <h2><a href="src/YoutubeDownloaderExtension.zip" download>Download</a></h2>
+    </div>
 </main>
 
 <footer>
