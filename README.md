@@ -16,7 +16,8 @@
         </details>
         <details>
             <summary>Como usar o <strong>Youtube Downloader Extension</strong>?</summary>
-            <p>Após a instalação da extensão, basta abrir qualquer vídeo e esperar o botão de download aparecer! A extensão está em fase beta, você pode ter bugs. <i>Mais informações no final do README.md</i>.</p>
+            <p>Após a instalação da extensão, basta abrir qualquer vídeo e esperar o botão de download aparecer! A extensão está em fase beta, você pode experimentar bugs. <i>Mais informações no final do README.md</i>.</p>
+            <img src="img/example.img" alt="Exemplo da extensão">
         </details>
         <details>
             <summary>O <strong>Youtube Downloader Extension</strong> faz download de vídeos?</summary>
