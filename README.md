@@ -31,6 +31,10 @@
             <summary>O <strong>Youtube Downloader Extension</strong> funciona no Firefox?</summary>
             <p>Não testei! A extensão foi feita e testada no Google Chrome. Navegadores com base no Chromium como Brave, Microsoft Edge, Opera, Vivaldi, Yandex Browser, ungoogled-chromium e outros devem funcionar normalmente.</p>
         </details>
+        <details>
+            <summary>O <strong>Youtube Downloader Extension</strong> é um site de download?</summary>
+            <p>Não, é uma extensão que trabalha nos request feito na página do youtube. O que isso quer dizer? Quer dizer que não existe nenhum servidor ou backend por trás da aplicação.</p>
+        </details>
     </div>
 </main>
 
