@@ -6,13 +6,13 @@
         <p>A extensão faz apenas um intermédio de pacotes que o youtube executa na página, então gera um <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Blob">blob</a> e faz o download.</p>
     <div>
     <div>
-        <h2><a href="https://github.com/luandunas/youtube-downloader-extension/raw/main/build/Youtube-MP3-Downloader.crx" download>Download da extensão</a></h2>
+        <h2><a href="https://github.com/luandunas/youtube-downloader-extension/raw/main/build/Youtube-MP3-Downloader.zip" download>Download da extensão</a></h2>
     </div>
     <div>
         <h2>Perguntas Frequentes (FAQ)</h2>
         <details>
             <summary>Como instalo o <strong>Youtube Downloader Extension</strong>?</summary>
-            <p>Após fazer o <a href="https://github.com/luandunas/youtube-downloader-extension/raw/main/build/Youtube-MP3-Downloader.crx" download>Download</a> do arquivo, vá até <a href="chrome://extensions/" target="_blank"><i>Gerenciar extensões</i></a> do Google Chrome, <strong>ative o Modo do desenvolvedor</strong> no canto superior direito, e arreste a pasta para a janela de extensões ou clique em <i>Carregar sem compactação</i> e selecione a pasta com os arquivos.</p>
+            <p>Após fazer o <a href="https://github.com/luandunas/youtube-downloader-extension/raw/main/build/Youtube-MP3-Downloader.zip" download>Download</a> do arquivo, vá até <a href="chrome://extensions/" target="_blank"><i>Gerenciar extensões</i></a> do Google Chrome, <strong>ative o Modo do desenvolvedor</strong> no canto superior direito, e arreste a pasta para a janela de extensões ou clique em <i>Carregar sem compactação</i> e selecione a pasta com os arquivos.</p>
         </details>
         <details>
             <summary>Como usar o <strong>Youtube Downloader Extension</strong>?</summary>
