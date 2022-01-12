@@ -17,7 +17,7 @@
         </details>
     </div>
     <div>
-    <h2><a href="src/YoutubeDownloaderExtension.zip" download>Download</a></h2>
+    <h2><a href="https://github.com/luandunas/youtube-downloader-extension/raw/main/src/YoutubeDownloaderExtension.zip" download>Download</a></h2>
     </div>
 </main>
 
