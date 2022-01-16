@@ -4,6 +4,7 @@
         <p>Dado a necessidade de baixar vídeos e áudios do youtube junto à frustrações de downloads lentos, popups e anúncios exagerados, criei esta extensão. Sem anúncios e popups chatos, sem intermédio terceiros e com download rápido.<p>
         <h2>Como funciona o <strong>Youtube Downloader Extension</strong>?</h2>
         <p>A extensão faz apenas um intermédio de pacotes que o youtube executa na página, então gera um <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Blob">blob</a> e faz o download.</p>
+        <img src="https://github.com/luandunas/youtube-downloader-extension/blob/main/img/example.png?raw=true" alt="Exemplo da extensão">
     <div>
     <div>
         <h2><a href="https://github.com/luandunas/youtube-downloader-extension/raw/main/build/Youtube-MP3-Downloader.zip" download>Download da extensão</a></h2>
