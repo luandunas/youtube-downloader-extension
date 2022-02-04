@@ -1,16 +1,10 @@
-window.addEventListener("yt-page-data-updated", () => {
-    observerDOMinit.observe(document, {
-        childList: true,
-        subtree: true
-    });
-})
-
-const observerDOMinit = new MutationObserver((mutations, obs) => {
-    if (document.querySelector("#top-level-buttons-computed")) {
+window.addEventListener("yt-page-data-updated", (e) => {
+    console.log(window.location.href.includes('watch'))
+    if (window.location.href.includes('watch')) {
+        console.log("ok")
         createButton();
-        obs.disconnect();
     }
-});
+})
 
 function createButton() {
     let style = `
@@ -23,9 +17,8 @@ function createButton() {
         align-items: center;
         height: 36px;
         font-family: Roboto, Arial, sans-serif;
-        color: #bbb;
-        pointer-events: none;
-        cursor: default;
+        color: white;
+        cursor: pointer;
         `
 
     var a = document.createElement('a');
@@ -35,41 +28,30 @@ function createButton() {
     a.download = `${document.querySelector("#container > h1 > yt-formatted-string").innerText}.wav`;
     a.insertAdjacentHTML('afterbegin', '<svg id="downloadIcon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="#bbb" style="padding:var(--yt-button-icon-padding,8px)"><path d="M14 2v11h2.51l-4.51 5.01-4.51-5.01h2.51v-11h4zm2-2h-8v11h-5l9 10 9-10h-5v-11zm3 19v3h-14v-3h-2v5h18v-5h-2z"/></svg>');
     a.style.cssText = style;
-    document.getElementById("top-level-buttons-computed").appendChild(a);
-    findDownloadLink();
+    document.querySelector("#menu > ytd-menu-renderer.style-scope.ytd-video-primary-info-renderer > #top-level-buttons-computed").appendChild(a);
+    a.addEventListener("click", download)
 }
-
-function findDownloadLink() {
-    var observer = new PerformanceObserver(list => {
-        list.getEntries().forEach(entry => {
-            if (entry.name.indexOf('videoplayback') !== -1) {
-                if (entry.name.indexOf('mime=audio') !== -1) {
-                    var mp3Link = entry.name.replace(/&range.+?(?=&)/g, "");
-                    fetch(mp3Link).then(function (res) {
-                        return res.blob();
-                    }).then(function (blob) {
-                        console.log("[Fetch BLOB] blob");
-                        blobUrl = URL.createObjectURL(blob);
-                        document.getElementById('downloadButton').href = blobUrl;
-                        observer.disconnect();
-                        document.getElementById('downloadIcon').style.fill = "white";
-                        document.getElementById('downloadButton').style.color = "white";
-                        document.getElementById('downloadButton').style.pointerEvents = "auto";
-                        document.getElementById('downloadButton').style.cursor = "pointer";
-                    })
-                }
+function download() {
+    for (request of performance.getEntriesByType("resource")) {
+        if (request.name.includes('videoplayback')) {
+            if (request.name.includes('mime=audio')) {
+                var mp3Link = request.name.replace(/&range.+?(?=&)/g, "");
+                console.log("[DOWNLOAD] Downloading...");
+                downloadResource(mp3Link);
+                break;
             }
-            // Display each reported measurement on console
-            //                 console.log("Name: " + entry.name +
-            //                     ", Type: " + entry.entryType +
-            //                     ", Start: " + entry.startTime +
-            //                     ", Duration: " + entry.duration + "\n");
-        })
-    });
-    observer.observe({ entryTypes: ['resource'] });
+        };
+    }
 }
 
-observerDOMinit.observe(document, {
-    childList: true,
-    subtree: true
-});
+function downloadResource(url) {
+    fetch(url, {
+        mode: 'no-cors'
+    })
+        .then(response => response.blob())
+        .then(blob => {
+            let blobUrl = window.URL.createObjectURL(blob);
+            document.getElementById('downloadButton').href = blobUrl;
+        })
+        .catch(e => console.error(e));
+}
