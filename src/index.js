@@ -31,16 +31,23 @@ function createButton() {
 }
 
 function download() {
+
+    console.log("[DOWNLOAD FUNCTION] Called.")
+
+    this.removeEventListener('click', download, false);
     for (request of performance.getEntriesByType("resource")) {
         if (request.name.includes('videoplayback')) {
             if (request.name.includes('mime=audio')) {
                 var mp3Link = request.name.replace(/&range.+?(?=&)/g, "");
                 //console.log("[DOWNLOAD] Downloading...");
+                console.log("[0]")
                 downloadResource(mp3Link);
-                break;
+                return;
             }
-        };
+        }
     }
+
+    setTimeout(download, 1000);
 }
 
 function downloadResource(url) {
@@ -50,5 +57,6 @@ function downloadResource(url) {
         console.log("[Fetch BLOB] blob");
         blobUrl = URL.createObjectURL(blob);
         document.getElementById('downloadButton').href = blobUrl;
+        document.getElementById('downloadButton').click();
     }).catch(e => console.error(e));
 }
