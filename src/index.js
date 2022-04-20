@@ -7,9 +7,9 @@ window.addEventListener("yt-page-data-updated", (e) => {
 function createButton() {
     let style = `
         text-decoration: none;
-        font-size: var(--ytd-tab-system_-_font-size);
-        font-weight: var(--ytd-tab-system_-_font-weight);
-        letter-spacing: var(--ytd-tab-system_-_letter-spacing);
+        font-size: var(--ytd-tab-system-font-size);
+        font-weight: var(--ytd-tab-system-font-weight);
+        letter-spacing: var(--ytd-tab-system-letter-spacing);
         display: flex;
         justify-content: center;
         align-items: center;
